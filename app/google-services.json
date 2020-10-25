@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1025018283393",
+    "firebase_url": "https://ubc-residence-room-exchange.firebaseio.com",
+    "project_id": "ubc-residence-room-exchange",
+    "storage_bucket": "ubc-residence-room-exchange.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025018283393:android:7db227f68fcf61134e5480",
+        "android_client_info": {
+          "package_name": "com.example.cpen321_m5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025018283393-t5jbip0ui9jk83fd605igq1agpi89mg0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAavXeIVW0OVRmYt2fTz0ifYaxm-q04wY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025018283393-t5jbip0ui9jk83fd605igq1agpi89mg0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

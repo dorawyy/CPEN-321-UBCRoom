@@ -1,0 +1,4 @@
+#Sat Oct 24 15:37:46 PDT 2020
+base.0=D\:\\CPEN321_M5\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
