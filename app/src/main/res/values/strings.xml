@@ -22,4 +22,49 @@
     <string name="login_failed">"Login failed"</string>
     <string name="retrieve_token">Retrieve Token</string>
     <string name="handle_notification_now">Someone just viewed your posts!</string>
+
+
+    
+
+
+    <string name="residence_prompt">Choose a Residence</string>
+
+    <string-array name="residence_arrays">
+        <item>Place Vanier</item>
+        <item>Totem Park</item>
+        <item>Orchard Commons</item>
+        <item>Ritsumeikan-UBC House</item>
+        <item>Walter Gage</item>
+        <item>Fairview Crescent</item>
+        <item>Marine Driver</item>
+        <item>Fraser Hall</item>
+        <item>Ponderosa Commons</item>
+        <item>Thunderbird</item>
+        <item>lona House</item>
+        <item>Brock Commons - Tallwood House</item>
+        <item>Exchange</item>
+        <item>Student Family Residence</item>
+        <item>Graduate Colleges</item>
+    </string-array>
+
+    <string name="types_prompt">Choose a Residence</string>
+
+    <string-array name="types_arrays">
+        <item>Shared Room</item>
+        <item>Connect Single Room</item>
+        <item>Single Traditional Room</item>
+        <item>Six Bedroom Suite</item>
+        <item>Four Bedroom Suit</item>
+        <item>Three Bedroom Suit</item>
+        <item>Two Bedroom Suit</item>
+        <item>One Bedroom Suit</item>
+        <item>Studio Suit</item>
+        <item>Nano Suit</item>
+        <item>Townhouset</item>
+        <item>Student Families</item>
+    </string-array>
+
+    <string name="text_msg_one">Distrubution of residences to rent</string>
+
+
 </resources>

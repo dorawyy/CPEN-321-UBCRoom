@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Post">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Post Page"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -26,4 +16,148 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_menu" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="672dp"
+        android:layout_marginTop="90dp"
+        android:background="#ffa5a5"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3d7ea6"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/pricetxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="#ffa5a5"
+                android:text="Price"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/editprice"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#fcdada"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:maxLength="4" />
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="#ffa5a5"
+                android:text="Location"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/location_spi"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#fcdada"
+                android:entries="@array/residence_arrays"
+                android:prompt="@string/residence_prompt" />
+
+            <TextView
+                android:id="@+id/types"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="#ffa5a5"
+                android:text="Types"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/types_spi"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#fcdada"
+                android:entries="@array/types_arrays"
+                android:prompt="@string/types_prompt" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editphone"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:inputType="numberSigned"
+                app:counterEnabled="true"
+                app:counterMaxLength="10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#fcdada"
+                    android:hint="Phone:"
+                    android:inputType="numberSigned"
+                    android:textSize="25sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editemail"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#fcdada"
+                    android:hint="Email:"
+                    android:textSize="25sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editdescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="450">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fcdada"
+                    android:hint="Description:"
+                    android:textSize="25sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#5c969e"
+                android:gravity="center_horizontal"
+                android:max="3000"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

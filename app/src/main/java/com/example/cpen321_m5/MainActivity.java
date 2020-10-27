@@ -38,8 +38,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.AsyncHttpClient;import com.loopj.android.http.AsyncHttpResponseHandler;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.content.IntentFilter;
 
@@ -64,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
     static final private String request_time_URL = "https://timedisplayer.azurewebsites.net/time";
     private TextView TimeTextView;
     private TextView text_view_notification;
+
+    //........................
+   private View search_image;
 
 
     @Override
@@ -143,6 +145,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "Trying to open google maps");
+                Intent mapsIntent = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(mapsIntent);
+            }
+        });
+
+
+        search_image = findViewById(R.id.search_image);
+        search_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "Trying to open search page");
                 Intent mapsIntent = new Intent(MainActivity.this, MapsActivity.class);
                 startActivity(mapsIntent);
             }

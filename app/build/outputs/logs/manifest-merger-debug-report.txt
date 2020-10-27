@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-68:12
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-65:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8c169b16c396874661c58a96c46930eb\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\de79141d24eaaf9fdfda032673164e8b\navigation-ui-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\a476ee8650c0f9e7654e5f9f2c3718dc\material-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -15,11 +15,12 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Yuefeng\.gra
 MERGED from [androidx.navigation:navigation-fragment:2.3.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\be33e17e160e6f07e14b77976e17ac19\navigation-fragment-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8e1fa5a2604a8f5ed21dffdeccbcf57a\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\aab5293454cabe85272e9de04d494d57\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\305c2898fe2457e82c9da2257c2bc0a1\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8d8a8abf56b0acf243894e5c793a7480\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\226817fd352d0debd037c03d8ec9b5c1\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\705071dba30571a9226503cb1f0dac80\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-messaging:20.3.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\eb85146f4d39ef715e25a11504b7bf33\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:17:1-45:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8c1aed4303e761aac5e34d2036bbfc96\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\305c2898fe2457e82c9da2257c2bc0a1\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\bc0e002cee3c62e9d228887e35f0b209\jetified-play-services-auth-18.1.0\AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\4bd111c56cbfef19d0a73d50a80a2fee\jetified-play-services-auth-api-phone-17.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\dc0e7793c1b91268fe823d74f68c633f\jetified-play-services-auth-base-17.0.0\AndroidManifest.xml:2:1-7:12
@@ -46,7 +47,6 @@ MERGED from [com.google.android.gms:play-services-basement:17.1.1] C:\Users\Yuef
 MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\96053716430fd55e78715f03703f812d\fragment-1.2.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\e1885386ed5f353d1f9598e95fed04db\drawerlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.3.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\cc184e5d342288092c826414b1640ced\transition-1.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8d8a8abf56b0acf243894e5c793a7480\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\bd24342c93fd52cb5e9c9c7bb35f50f1\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\4ee2c6fbb04620a960d68455ede34459\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\f3fa9ef652ab35d15daed505053a76a6\customview-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -78,22 +78,23 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Yuefeng\.gradle\
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\bf3e5eb0de5dbaf7174c5a9a34f69c5a\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\d5fd7fbc692311a845217063332ce16c\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\6435850e23f2d01013861f1c8dbdb3a0\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\cabdbb5ff003db2cee0fb095a94e6704\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\ae891c337b2dc8d7a559b90a3711f662\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\467b040972e5d42442f90b49207efc7f\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
-INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-65:12
 	package
 		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml
 		INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-68:12
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-68:12
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:2:11-69
@@ -127,8 +128,12 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Us
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8e8493fc4060d1a9e60e0e8b89d28daa\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:26:5-67
 	android:name
 		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:12:22-77
 application
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:13:5-66:19
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:14:5-63:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8c169b16c396874661c58a96c46930eb\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8c169b16c396874661c58a96c46930eb\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\a476ee8650c0f9e7654e5f9f2c3718dc\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -185,92 +190,90 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Us
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8e8493fc4060d1a9e60e0e8b89d28daa\jetified-transport-backend-cct-2.2.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\09a4bf673ec4891d08a21c203c688e10\jetified-transport-runtime-2.2.0\AndroidManifest.xml:25:5-39:19
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\09a4bf673ec4891d08a21c203c688e10\jetified-transport-runtime-2.2.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\cabdbb5ff003db2cee0fb095a94e6704\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\cabdbb5ff003db2cee0fb095a94e6704\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\980630e158f38ced2d00e440ae193d30\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:17:9-41
 	android:roundIcon
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:18:9-54
 	android:icon
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:20:9-40
+	android:usesCleartextTraffic
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:21:9-44
+activity#com.example.cpen321_m5.ChatRoom
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:22:9-55
+	android:name
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:22:19-43
 activity#com.example.cpen321_m5.Signin_activity
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:20:9-62
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:23:9-53
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:20:19-50
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:23:19-50
 activity#com.example.cpen321_m5.Chat
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:21:9-42
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:24:9-42
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:21:19-39
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:24:19-39
 activity#com.example.cpen321_m5.Post
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:22:9-42
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:25:9-42
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:22:19-39
-activity#com.example.cpen321_m5.ui.login.LoginActivity
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:23:9-25:60
-	android:label
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:25:13-57
-	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:24:13-51
-activity#com.example.cpen321_m5.CalendarActivity
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:26:9-54
-	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:26:19-51
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:25:19-39
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:35:9-37:55
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:34:9-36:55
 	android:value
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:37:13-52
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:36:13-52
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:36:13-58
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:35:13-58
 activity#com.example.cpen321_m5.MapsActivity
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:39:9-41:59
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:38:9-40:59
 	android:label
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:41:13-56
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:40:13-56
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:40:13-41
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:39:13-41
 activity#com.example.cpen321_m5.MainActivity
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:42:9-48:20
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:41:9-47:20
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:42:19-47
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:41:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:43:13-47:29
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:42:13-46:29
 action#android.intent.action.MAIN
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:44:17-69
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:44:25-66
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:43:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:46:17-77
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:46:27-74
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:45:27-74
 service#com.example.cpen321_m5.MyFirebaseMessagingService
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:50:9-56:19
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:49:9-55:19
 	android:exported
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:52:13-37
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:51:13-55
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:50:13-55
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:53:13-55:29
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:52:13-54:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:54:17-78
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:53:17-78
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:54:25-75
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:53:25-75
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:58:9-60:51
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:57:9-59:52
 	android:resource
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:60:13-49
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:59:13-49
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:59:13-83
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:58:13-83
 meta-data#com.google.firebase.messaging.default_notification_color
-ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:61:9-63:54
+ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:60:9-62:54
 	android:resource
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:63:13-51
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:62:13-51
 	android:name
-		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:62:13-84
+		ADDED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml:61:13-84
 uses-sdk
 INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\CPEN321_M5\app\src\main\AndroidManifest.xml
@@ -297,6 +300,10 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Yuefeng\.gr
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8e1fa5a2604a8f5ed21dffdeccbcf57a\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\aab5293454cabe85272e9de04d494d57\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\aab5293454cabe85272e9de04d494d57\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\305c2898fe2457e82c9da2257c2bc0a1\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\305c2898fe2457e82c9da2257c2bc0a1\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8d8a8abf56b0acf243894e5c793a7480\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8d8a8abf56b0acf243894e5c793a7480\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\226817fd352d0debd037c03d8ec9b5c1\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\226817fd352d0debd037c03d8ec9b5c1\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\705071dba30571a9226503cb1f0dac80\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -305,8 +312,6 @@ MERGED from [com.google.firebase:firebase-messaging:20.3.0] C:\Users\Yuefeng\.gr
 MERGED from [com.google.firebase:firebase-messaging:20.3.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\eb85146f4d39ef715e25a11504b7bf33\jetified-firebase-messaging-20.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8c1aed4303e761aac5e34d2036bbfc96\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8c1aed4303e761aac5e34d2036bbfc96\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\305c2898fe2457e82c9da2257c2bc0a1\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\305c2898fe2457e82c9da2257c2bc0a1\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\bc0e002cee3c62e9d228887e35f0b209\jetified-play-services-auth-18.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:18.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\bc0e002cee3c62e9d228887e35f0b209\jetified-play-services-auth-18.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\4bd111c56cbfef19d0a73d50a80a2fee\jetified-play-services-auth-api-phone-17.0.0\AndroidManifest.xml:5:5-44
@@ -359,8 +364,6 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\Yuefeng\.gradle\
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\e1885386ed5f353d1f9598e95fed04db\drawerlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.3.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\cc184e5d342288092c826414b1640ced\transition-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.3.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\cc184e5d342288092c826414b1640ced\transition-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8d8a8abf56b0acf243894e5c793a7480\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\8d8a8abf56b0acf243894e5c793a7480\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\bd24342c93fd52cb5e9c9c7bb35f50f1\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\bd24342c93fd52cb5e9c9c7bb35f50f1\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\4ee2c6fbb04620a960d68455ede34459\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
@@ -423,6 +426,8 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Yuefeng\.gradle\caches\transfo
 MERGED from [androidx.print:print:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\d5fd7fbc692311a845217063332ce16c\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\6435850e23f2d01013861f1c8dbdb3a0\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\6435850e23f2d01013861f1c8dbdb3a0\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\cabdbb5ff003db2cee0fb095a94e6704\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\cabdbb5ff003db2cee0fb095a94e6704\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\ae891c337b2dc8d7a559b90a3711f662\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\ae891c337b2dc8d7a559b90a3711f662\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\Yuefeng\.gradle\caches\transforms-2\files-2.1\467b040972e5d42442f90b49207efc7f\jetified-transport-api-2.2.0\AndroidManifest.xml:18:5-20:41
