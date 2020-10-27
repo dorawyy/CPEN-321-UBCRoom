@@ -23,10 +23,13 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
+import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -46,6 +49,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.android.volley.Request.Method.GET;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
 
     private GoogleMap mMap;
@@ -64,6 +69,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
     int price_test;
+
 
 
 
@@ -153,29 +159,66 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
                 String url = "http:20.185.220.227:3000/price";
-                List<String> jsonResponses = new ArrayList<>();
+                //List<String> jsonResponses = new ArrayList<>();
 
-                JSONObject price = new JSONObject();
-                try {
-                    price.put("price", price_test);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-                RequestQueue requestQueue = Volley.newRequestQueue(MapsActivity.this);
+                //RequestQueue requestQueue = Volley.newRequestQueue(MapsActivity.this);
 
 
-                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+//                JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+//                    @Override
+//                    public void onResponse(JSONObject response) {
+//                        try {
+//
+//                            String result = response.getString("_id");
+//                            System.out.println("sdhjfvjhvbf   " + result);
+//
+//
+//                            JSONArray jsonArray = response.getJSONArray("Value");
+//                            for(int i = 0; i < jsonArray.length(); i++){
+//                                JSONObject jsonObject = jsonArray.getJSONObject(i);
+//                                String email = jsonObject.getString("_id");
+//
+//                                System.out.println("__________******__________" + email);
+//
+//                                jsonResponses.add(email);
+//                            }
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                }, new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        error.printStackTrace();
+//                    }
+//                });
+
+                //requestQueue.add(jsonArrayRequest);
+
+
+
+                JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url,  new Response.Listener < JSONArray > () {
+
                     @Override
-                    public void onResponse(JSONObject response) {
-                        try {
-                            JSONArray jsonArray = response.getJSONArray("price");
-                            for(int i = 0; i < jsonArray.length(); i++){
-                                JSONObject jsonObject = jsonArray.getJSONObject(i);
-                                String email = jsonObject.getString("email");
+                    public void onResponse(JSONArray response) {
 
-                                jsonResponses.add(email);
+                        System.out.println("success in respones");
+                        try {
+
+                            System.out.println("success get the array");
+                            for (int i = 0; i < response.length(); i++) {
+
+
+                                JSONObject jb = response.getJSONObject(i);
+                                String id = jb.getString("_id");
+                                System.out.println(id);
+
+
+                                Toast.makeText(MapsActivity.this, "Num" + i +":"+"Post ID number is: "+ id,
+                                        Toast.LENGTH_SHORT).show();
+
                             }
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -183,18 +226,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        error.printStackTrace();
+                        Log.e("research", error.toString());
                     }
                 });
 
 
-                requestQueue.add(jsonObjectRequest);
+
+                jsonArrayRequest.setRetryPolicy(new DefaultRetryPolicy(500000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+                RequestQueue requestQueue = Volley.newRequestQueue(MapsActivity.this);
+                requestQueue.add(jsonArrayRequest);
 
 
 
 
 
-                finish();
+                //finish();
+
+
+
+
             }
         });
 
