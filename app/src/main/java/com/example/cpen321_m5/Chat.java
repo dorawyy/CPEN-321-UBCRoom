@@ -1,9 +1,5 @@
 package com.example.cpen321_m5;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -11,6 +7,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -64,9 +65,25 @@ public class Chat extends AppCompatActivity {
 
                         Intent intent = new Intent(Chat.this, ChatRoom.class);
                         intent.putExtra("name", editText.getText().toString());
+                        TextView username = findViewById(R.id.username);
+                        username.setText("username: " + editText.getText().toString());
+
                         Chat.this.startActivity(intent);
 
                     }
                 });
+    }
+
+    @Override
+    protected void onStart() {
+
+        super.onStart();
+//        findViewById(R.id.enterBtn).setEnabled(false);
+    }
+
+    @Override
+    protected void onDestroy() {
+        findViewById(R.id.enterBtn).setEnabled(false);
+        super.onDestroy();
     }
 }

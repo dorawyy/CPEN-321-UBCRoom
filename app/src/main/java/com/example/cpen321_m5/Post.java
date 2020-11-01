@@ -122,7 +122,7 @@ public class Post extends AppCompatActivity {
 
                 JSONObject postData = new JSONObject();
                 try {
-                    postData.put("price", 3000);
+                    postData.put("price", Integer.valueOf(pricestring));
                     postData.put("location", locationstring);
                     postData.put("types", typesstring);
                     postData.put("phone", phonestring);
@@ -137,6 +137,7 @@ public class Post extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         System.out.println(response);
+
                     }
                 }, new Response.ErrorListener() {
                     @Override

@@ -1662,6 +1662,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_post
 drawable ic_search_bar
+drawable icons8_search_bar_96
 drawable logo2
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1891,7 +1892,11 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView2
 id imageView3
+id imageView6
+id imageView7
+id imageView8
 id info
 id invisible
 id italic
@@ -2119,6 +2124,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
@@ -2422,6 +2428,7 @@ string title_chat
 string title_home
 string title_post
 string types_prompt
+string username
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

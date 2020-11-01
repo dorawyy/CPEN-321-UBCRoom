@@ -8,16 +8,20 @@
         "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_search_bar.xml"
     },
     {
-        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_house_logo.png.flat",
         "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_house_logo.png"
     },
     {
+        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_house_logo.png.flat",
         "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_house_logo.png"
+    },
+    {
+        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_search_bar_96.png.flat",
+        "source": "D:\\CPEN321_M5\\app\\src\\main\\res\\drawable\\icons8_search_bar_96.png"
     },
     {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",

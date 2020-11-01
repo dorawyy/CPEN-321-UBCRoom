@@ -119,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
                                     String token = task.getResult().getToken();
                                     // 4
 //                               val msg = getString(R.string.token_prefix, token)
+                                    //TODO: send token to backend
                                     Log.d(TAG, token);
                                     Toast.makeText(MainActivity.this, token, Toast.LENGTH_LONG).show();
                                 }
@@ -236,7 +237,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String message = intent.getStringExtra("message");
-            Log.d("receiver", "Got message: ???? " + message);
             Bundle bundle;
             text_view_notification = findViewById(R.id.text_view_notification);
             text_view_notification.setText(message);
