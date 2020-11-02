@@ -1,4 +1,8 @@
 language: node_js
 node_js:
   - 12
-script: npm test --detectOpenHandles
+
+before_script:
+  - npm install mongodb
+script: 
+  - npm test --detectOpenHandles
