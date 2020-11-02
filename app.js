@@ -63,8 +63,14 @@ app.get('/search', function(req, res){
                     console.log(err);
                     res.send(err);
                 } else {
-                    console.log(data);
-                    res.send(data);
+                    var dataf = [];
+                    for(let i = 0; i < 4; i++){
+                        if(i >= data.length) break;
+                        dataf.push(data[data.length - i - 1]);
+
+                    }
+                    console.log(dataf);
+                    res.send(dataf);
                 }
             });
 });
