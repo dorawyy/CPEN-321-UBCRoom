@@ -96,14 +96,14 @@ var mylogic = async function(re, ids, index, cd) {
             pick._id = ObjectId(pick.old_id);
             delete pick.old_id;
             re.push(pick);
-            if(index == 4) cd();
+            if(index === 4) cd();
             else{
                 console.log(ids);
                 mylogic(re,ids,index+1,cd);
             }
         }
         else{
-            if(index == 4) cd();
+            if(index === 4) cd();
             else{
                 console.log(ids);
                 mylogic(re,ids,index+1,cd);
