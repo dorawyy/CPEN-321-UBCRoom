@@ -26,16 +26,15 @@ var data = {
     };
 
 describe("Test the root path", () => {
-    test("test get", done => {
-        request(app)
-          .get('/')
-          .then(response => {
-            expect(response.text).toBe("data:");
-            expect(response.statusCode).toBe(200);
-            done();
-          });
-       
-      });
+  test("test get", done => {
+    request(app)
+      .get('/')
+      .then(response => {
+        expect(response.text).toBe("data:");
+        expect(response.statusCode).toBe(200);
+        done();
+      }); 
+  });
   test("test POST", done => {
     request(app)
       .post('/')
@@ -47,6 +46,7 @@ describe("Test the root path", () => {
       });
    
   });
+  
   
   test("test search post", done => {
     request(app)

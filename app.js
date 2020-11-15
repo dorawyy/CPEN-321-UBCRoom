@@ -53,7 +53,7 @@ app.post('/search', function(req,res){
 
 var mysearch = function(s_price, s_location, s_types, cb) {
     db.collection("list").find(
-        {'price': s_price,
+        {'price': {$lte:s_price},
         'location': s_location,
         'types': s_types})
         .toArray(cb);
@@ -62,35 +62,38 @@ var mysearch = function(s_price, s_location, s_types, cb) {
 app.get('/search', function(req, res){
     mysearch(s_price, s_location, s_types,
             function(err, data){
-                if (err){
-                    console.log(err);
-                    res.send(err);
-                } else {
-                    var dataf = [];
-                    for(let i = 0; i < 4; i++){
-                        if(i >= data.length) break;
-                        dataf.push(data[data.length - i - 1]);
-                    }
-                    data.forEach(elem => {
-                        elem.old_id = String(elem._id);
-                        delete elem._id;
-                    });        
-                    db_logic.collection("logic").insertMany(data,
-                        (err, request) =>{
-                            if(err) return console.log(err);
+                
+                var dataf = [];
+                for(let i = 0; i < 4; i++){
+                    if(i >= data.length) break;
+                    var x = data[data.length - i - 1];
+                    dataf.push({
+                        _id:x._id,
+                        price: x.price,
+                        location: x.location,
+                        types: x.types,
+                        phone: x.phone,
+                        email: x.email,
+                        descript: x.descript
                     });
-                    //console.log(dataf);
-                    res.send(dataf);
                 }
+                data.forEach(elem => {
+                    elem.old_id = String(elem._id);
+                    delete elem._id;
+                    });        
+                db_logic.collection("logic").insertMany(data,
+                    (err, request) =>{
+                        if(err) return console.log(err);
+                });
+                console.log(dataf);
+                res.send(dataf);
+                
             });
 });
 
 var mylogic = async function(re, ids, index, cd) {
     db_logic.collection('logic').find({'old_id':{$nin:ids}}).toArray(function(err, data){
-        if(err){
-            res.send(err);
-        }
-        else if(data.length > 0){
+        if(data.length > 0){
             var pick = data[Math.floor(Math.random() * data.length)];
             ids.push(pick.old_id);
             pick._id = ObjectId(pick.old_id);
@@ -98,14 +101,12 @@ var mylogic = async function(re, ids, index, cd) {
             re.push(pick);
             if(index === 4) cd();
             else{
-                console.log(ids);
                 mylogic(re,ids,index+1,cd);
             }
         }
         else{
             if(index === 4) cd();
             else{
-                console.log(ids);
                 mylogic(re,ids,index+1,cd);
             }
         }
@@ -117,78 +118,6 @@ app.get('/logic', function(req,res){
     var ids = [];
     mylogic(re,ids,1,()=>{console.log(re); res.send(re);});
 
-    // db_logic.collection('logic').find().toArray(function(err, data){
-    //     if(err){
-    //         res.send(err);
-    //     }
-    //     else if(data.length > 0){
-    //         console.log(data);
-    //         var pick = data[Math.floor(Math.random() * data.length)];
-    //         id1 = pick.old_id;
-    //         console.log(id1);
-    //         pick._id = ObjectId(pick.old_id);
-    //         delete pick.old_id;
-    //         re.push(pick);
-    //     }
-    // });
-    // db_logic.collection('logic').find({"old_id":{$not: { $eq: id1}}}).toArray(function(err, data){
-    //     console.log("111111111111111111111111");
-    //     if({"old_id":{$not: { $eq: id1}}}) console.log("true");
-        
-    //     console.log("111111111111111111111111");
-    //     if(err){
-    //         res.send(err);
-    //     }
-    //     else if(data.length > 0){
-    //         console.log(data);
-    //         var pick = data[Math.floor(Math.random() * data.length)];
-    //         id2 = pick.old_id;
-    //         if (pick.old_id === id1) console.log("?????????????????????");
-    //         else{
-    //             console.log(pick.old_id);
-    //             console.log(id1);
-                
-    //             console.log(typeof(pick.old_id));
-    //             console.log(typeof(id1));
-    //         }
-    //         pick._id = ObjectId(pick.old_id);
-    //         delete pick.old_id;
-    //         re.push(pick);
-    //     }
-    // });
-    // db_logic.collection('logic').find({"old_id":{$nin:[id1,id2]}}).toArray(function(err, data){
-    //     if(err){
-    //         res.send(err);
-    //     }
-    //     else if(data.length > 0){
-    //         console.log(data);
-    //         var pick = data[Math.floor(Math.random() * data.length)];
-    //         id3 = pick.old_id;
-    //         pick._id = ObjectId(pick.old_id);
-    //         delete pick.old_id;
-    //         re.push(pick);
-    //     }
-    // });
-    // db_logic.collection('logic').find({"old_id":{$nin:[id1,id2,id3]}}).toArray(function(err, data){
-    //     if(err){
-    //         res.send(err);
-    //     }
-    //     else if(data.length > 0){
-    //         console.log(data);
-    //         var pick = data[Math.floor(Math.random() * data.length)];
-    //         pick._id = ObjectId(pick.old_id);
-    //         delete pick.old_id;
-    //         re.push(pick);
-    //         console.log(re);
-    //         res.send(re);
-    //     }
-    //     else{
-    //         console.log(re);
-    //         res.send(re);
-    //     }
-    // });
-
-    
 });
 
 
