@@ -6,7 +6,7 @@ app.use(express.json());
 var db;
 var s_price, s_location, s_types;
 
-const port1 = process.env.PORT || 3001;
+const port1 = process.env.PORT || 3000;
 
 var MongoClient = require("mongodb").MongoClient;
 const ID = require("mongodb").ObjectId
@@ -111,10 +111,6 @@ var mylogic = async function(re, ids, index, cd) {
         }
     });
 }
-
-
-
-
 app.get('/logic', function(req,res){
     var id1,id2,id3;
     var re = [];
