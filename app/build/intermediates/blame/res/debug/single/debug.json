@@ -16,12 +16,12 @@
         "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_house_logo.png.flat",
-        "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_house_logo.png"
-    },
-    {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icons8_search_bar_96.png.flat",
         "source": "D:\\CPEN321_M5\\app\\src\\main\\res\\drawable\\icons8_search_bar_96.png"
+    },
+    {
+        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_house_logo.png.flat",
+        "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_house_logo.png"
     },
     {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
@@ -68,12 +68,16 @@
         "source": "D:\\CPEN321_M5\\app\\src\\main\\res\\drawable\\user_icon.png"
     },
     {
+        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_image_24.png.flat",
+        "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_image_24.png"
+    },
+    {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_search_bar.png.flat",
         "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_search_bar.png"
     },
     {
-        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_image_24.png.flat",
-        "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_image_24.png"
+        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_sent_message.xml.flat",
+        "source": "D:\\CPEN321_M5\\app\\src\\main\\res\\layout\\item_sent_message.xml"
     },
     {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -82,10 +86,6 @@
     {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_post.png.flat",
         "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_post.png"
-    },
-    {
-        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_sent_message.xml.flat",
-        "source": "D:\\CPEN321_M5\\app\\src\\main\\res\\layout\\item_sent_message.xml"
     },
     {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_post.png.flat",
@@ -288,12 +288,12 @@
         "source": "D:\\CPEN321_M5\\app\\src\\main\\res\\layout\\activity_chat.xml"
     },
     {
-        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_home.png.flat",
-        "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_home.png"
-    },
-    {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_image_24.xml.flat",
         "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_image_24.xml"
+    },
+    {
+        "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_home.png.flat",
+        "source": "D:\\CPEN321_M5\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_home.png"
     },
     {
         "merged": "D:\\CPEN321_M5\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
