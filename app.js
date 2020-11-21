@@ -1,9 +1,11 @@
 var express = require("express");
 const { exec } = require("child_process");
 const { ObjectId } = require("mongodb");
+var {mylogic} = require("./mylogic");
+var {mysearch} = require("./mysearch");
 var app = express();
 app.use(express.json());
-var db;
+var db, db_logic;
 var s_price, s_location, s_types;
 
 const port1 = process.env.PORT || 3000;
@@ -33,12 +35,9 @@ app.post('/', function(req, res){
             email: req.body.email,
             descript: req.body.descript
         },
-            (err, request) =>{
-                if(err) return console.log(err);
-                
-    });
+            (err, request) =>{});
 
-    res.status(200).json({ message: "price:"+ req.body.price + "  location:" + req.body.location });
+    res.status(200).json({ message: "price:"+ req.body.price + "  location:" + req.body.location });
 });
 
 
@@ -51,21 +50,15 @@ app.post('/search', function(req,res){
 	}); 
 });
 
-var mysearch = function(s_price, s_location, s_types, cb) {
-    db.collection("list").find(
-        {'price': {$lte:s_price},
-        'location': s_location,
-        'types': s_types})
-        .toArray(cb);
-}
-
 app.get('/search', function(req, res){
     mysearch(s_price, s_location, s_types,
             function(err, data){
                 
                 var dataf = [];
                 for(let i = 0; i < 4; i++){
-                    if(i >= data.length) break;
+                    if(i >= data.length){
+                        break;
+                    } 
                     var x = data[data.length - i - 1];
                     dataf.push({
                         _id:x._id,
@@ -83,85 +76,29 @@ app.get('/search', function(req, res){
                     });        
                 db_logic.collection("logic").insertMany(data,
                     (err, request) =>{
-                        if(err) return console.log(err);
+                        if(err) return err;
                 });
-                console.log(dataf);
-                res.send(dataf);
+                if (data.length != 0) res.send(dataf);
+                else res.status(402).json({ message: "empty output" });
                 
+            },function(){
+                res.status(401).json({ message: "empty input" });
             });
-});
 
-var mylogic = async function(re, ids, index, cd) {
-    db_logic.collection('logic').find({'old_id':{$nin:ids}}).toArray(function(err, data){
-        if(data.length > 0){
-            var pick = data[Math.floor(Math.random() * data.length)];
-            ids.push(pick.old_id);
-            pick._id = ObjectId(pick.old_id);
-            delete pick.old_id;
-            re.push(pick);
-            if(index === 4) cd();
-            else{
-                mylogic(re,ids,index+1,cd);
-            }
-        }
-        else{
-            if(index === 4) cd();
-            else{
-                mylogic(re,ids,index+1,cd);
-            }
-        }
-    });
-}
+});
 app.get('/logic', function(req,res){
     var id1,id2,id3;
     var re = [];
     var ids = [];
-    mylogic(re,ids,1,()=>{console.log(re); res.send(re);});
+    mylogic(re,ids,1,()=>{
+        res.send(re);
+    }, 1);
 
 });
 
 
-// test search with mockmysearch()
-
-// var mockmysearch = jest.fn();
-
-// mockmysearch
-//     .mockReturnValueOnce([{
-//         price: 3000,
-//         location: "PV",
-//         types: "1",
-//         phone: "1",
-//         email: "1",
-//         descript: "1"
-//         }]
-        
-//     )
-//     .mockReturnValue([{
-//         price: 3000,
-//         location: "PV",
-//         types: "1",
-//         phone: "1",
-//         email: "1",
-//         descript: "1"
-//         },
-//         {
-//         price: 3000,
-//         location: "PV",
-//         types: "1",
-//         phone: "1",
-//         email: "1",
-//         descript: "1"
-//         }])
-
-
-
-// app.get('/testsearch', function(req, res){
-//     res.status(200).json(mockmysearch());
-// });
 
 
 
 
-module.exports = app;
-
-
+module.exports = {app};
