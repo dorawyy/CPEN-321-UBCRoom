@@ -20,7 +20,7 @@ var mylogic = async function(re, ids, index, cd, bad) {
            db = client.db("list");
            db_logic = client.db("logic");
            db_logic.collection('logic').find({'old_id':{$nin:ids}}).toArray(function(err, data){
-            if(bad === 0) data = [];
+            if(bad == 0) data = [];
             if(data.length > 0){
                 var pick = data[Math.floor(Math.random() * data.length)];
                 ids.push(pick.old_id);

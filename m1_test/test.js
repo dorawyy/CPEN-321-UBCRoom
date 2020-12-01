@@ -7,13 +7,15 @@ const request = require("supertest");
 
 
 var postdata = {
-    price: 3000,
-    location: "PV",
-    types: "1",
-    phone: "1",
-    email: "1",
-    descript: "1"
-    };
+  price: 3000,
+  location: "PV",
+  types: "1",
+  phone: "1",
+  email: "1",
+  descript: "1",
+  image:"url",
+  token:"e_Jwz5wJTtmenW_EGnSwLg:APA91bEUz-5zncQLjUTnVzX5RiTlXkabiFOFndiUE_ux7J1Za0B2IlPmqep7EzGZFoW5OUOSZpDilltUUD0Mwoa34WvuQ-OZ0PPhEGlBDWKfc63bKZDm0a65Cbv4qcH6_h_VFO3XO3R-"
+  };
 var data = {
     price: 3000,
     location: "PV",
@@ -22,7 +24,7 @@ var data = {
 
     const mocked_Search_GET_good = jest.fn(cb => cb(3000, "PV", "1"));
     const mocked_Search_GET_bad1 = jest.fn(cb => cb(5000, "", ""));
-    const mocked_Search_GET_bad2 = jest.fn(cb => cb(5000, "1", "1"));
+    const mocked_Search_GET_bad2 = jest.fn(cb => cb(-9999999, "1", "1"));
     describe("Module1", () => {
       var {mysearch} = require("../mysearch");
       var {app} = require("../app_search");

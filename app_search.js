@@ -35,7 +35,8 @@ app.get('/search', function(req, res){
                         types: x.types,
                         phone: x.phone,
                         email: x.email,
-                        descript: x.descript
+                        descript: x.descript,
+                        image: x.image
                     });
                 }
                 data.forEach(elem => {
@@ -46,7 +47,7 @@ app.get('/search', function(req, res){
                     (err, request) =>{
                         if(err) return err;
                 });
-                if (data.length !== 0) res.send(dataf);
+                if (data.length != 0) res.send(dataf);
                 else res.status(402).json({ message: "empty output" });
                 
             },function(){

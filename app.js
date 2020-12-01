@@ -1,6 +1,8 @@
 var express = require("express");
+var bodyparser = require("body-parser");
 var app = express();
-app.use(express.json());
+
+app.use(bodyparser.json({limit: '50mb'}));
 var db;
 
 const port1 = process.env.PORT || 3000;
