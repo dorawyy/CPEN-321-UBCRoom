@@ -7,6 +7,8 @@ import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationListener;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,15 +17,6 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.Toast;
-
-import com.android.volley.DefaultRetryPolicy;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -32,24 +25,16 @@ import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
 
     private final static String TAG = "MapActivity";
-
     private SeekBar simpleSeekBar;
     private EditText ed;
-
     private String search_price;
-    private int price_test;
-
+    private int price_test = 0;
     private ArrayList<String> jsonresult = new ArrayList<String>();
-
 
 
     @Override
@@ -63,20 +48,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         ed = (EditText) findViewById(R.id.search_price_edi);
         simpleSeekBar=(SeekBar)findViewById(R.id.seekBar);
-        ed.setOnClickListener(new EditText.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                price_test = Integer.parseInt(ed.getText().toString());
-                search_price = String.valueOf(price_test);
-                if(price_test <= 10000){
-                    simpleSeekBar.setProgress(price_test);
 
-                    price_test = Integer.parseInt(ed.getText().toString());
-                    search_price = String.valueOf(price_test);
-                }
+        ed.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                price_test = 0;
+            }
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                price_test = 0;
+            }
+            @Override
+            public void afterTextChanged(Editable s) {
+                try{
+                    search_price = String.valueOf(ed.getText());
+                    price_test = Integer.parseInt(search_price);
+
+                    if(price_test < 10000){
+                        simpleSeekBar.setProgress(price_test);
+                    }
+                }catch (Exception ex){}
+
             }
         });
 
+        final int[] i = new int[1];
         simpleSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChangedValue = 0;
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -84,6 +80,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
             public void onStartTrackingTouch(SeekBar seekBar) {
                 // TODO Auto-generated method stub
+                i[0] = 0;
             }
             public void onStopTrackingTouch(SeekBar seekBar) {
                 Toast.makeText(MapsActivity.this, "MAX Price :" + progressChangedValue,
@@ -96,40 +93,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
 
-        Button btnReturn1 = (Button) findViewById(R.id.search_submit_but);
-        btnReturn1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-                Spinner search_loc_spi;
-                String search_loc;                          //location that use enter in
-                Spinner search_typs_spi;
-                String search_typs;                             //types that use enter in
-                // TODO Auto-generated method stub
-
-                search_loc_spi = (Spinner)findViewById(R.id.search_loc_spi);
-                search_loc = search_loc_spi.getSelectedItem().toString();
-                Log.v("search/location:", search_loc);
-
-                search_typs_spi = (Spinner)findViewById(R.id.search_types_spi);
-                search_typs = search_typs_spi.getSelectedItem().toString();
-                Log.v("search/types:", search_typs);
-
-                Log.v("search/price:", search_price);
-
-                Intent mIntent = new Intent();
-                mIntent.putExtra("keyName", getmess(search_loc, search_typs));
-                setResult(RESULT_OK, mIntent);
-                finish();
-
-            }
-        });
-
-        //.........................................................................
+        backtomain();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        // set Home Selected
         bottomNavigationView.setSelectedItemId(R.id.nav_chat);
-        // perform ItemSelectedListener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener(){
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -139,6 +106,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.nav_chat:
+                        startActivity(new Intent(getApplicationContext(), Chat.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.nav_post:
                         startActivity(new Intent(getApplicationContext(), Post.class));
@@ -152,65 +121,43 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
     }
+    public void backtomain(){
 
-    public ArrayList<String> getmess(String search_loc, String search_typs){
+        Button btnReturn1 = (Button) findViewById(R.id.search_submit_but);
+        btnReturn1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
 
-        String url = "http:40.76.20.105:3000/search";
-        RequestQueue requestQueue = Volley.newRequestQueue(MapsActivity.this);
-        JSONObject postData = new JSONObject();
-        try {
-            postData.put("price", Integer.valueOf(search_price));
-            postData.put("location", search_loc);
-            postData.put("types", search_typs);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, postData, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                System.out.println(response);
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                error.printStackTrace();
-            }
-        });
-        requestQueue.add(jsonObjectRequest);
-        //.......................................................................................................
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url,  new Response.Listener < JSONArray > () {
+                Spinner search_loc_spi;
+                String search_loc;                          //location that use enter in
+                Spinner search_typs_spi;
+                String search_typs;                             //types that use enter in
 
-            @Override
-            public void onResponse(JSONArray response) {
-                System.out.println("success in respones");
-                try {
-                    System.out.println("success get the array");
-                    if(response.length() == 0){
-                        jsonresult.add("there is no result return");
-                    }
-                    else{
-                        for (int i = 0; i < response.length(); i++) {
-                            JSONObject jb = response.getJSONObject(i);
-                            jsonresult.add(jb.toString());
-                        }
-                    }
+                search_loc_spi = (Spinner)findViewById(R.id.search_loc_spi);
+                search_loc = search_loc_spi.getSelectedItem().toString();
+                Log.v("search/location:", search_loc);
 
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e("research", error.toString());
+                search_typs_spi = (Spinner)findViewById(R.id.search_types_spi);
+                search_typs = search_typs_spi.getSelectedItem().toString();
+                Log.v("search/types:", search_typs);
+
+                Log.v("search/price:", String.valueOf(price_test));
+
+                jsonresult.add(search_price);
+                jsonresult.add(search_loc);
+                jsonresult.add(search_typs);
+                Intent mIntent = new Intent();
+                mIntent.putExtra("keyName", jsonresult);
+                setResult(RESULT_OK, mIntent);
+                finish();
+
             }
         });
 
-        jsonArrayRequest.setRetryPolicy(new DefaultRetryPolicy(500000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-        requestQueue.add(jsonArrayRequest);
-
-        return jsonresult;
     }
+
+    //public ArrayList<String> getmess(String search_loc, String search_typs) throws InterruptedException {
+
+    //}
 
     /**
      * Manipulates the map once available.

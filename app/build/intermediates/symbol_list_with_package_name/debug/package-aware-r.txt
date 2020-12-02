@@ -1856,6 +1856,8 @@ id editemailtie
 id editphone
 id editphonetie
 id editprice
+id email
+id emailtxt
 id end
 id end_padder
 id enterAlways
@@ -1895,11 +1897,9 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView2
 id imageView3
-id imageView6
-id imageView7
-id imageView8
+id imageView_post
+id imagetxt
 id info
 id invisible
 id italic
@@ -1918,10 +1918,9 @@ id linearLayout
 id listMode
 id list_item
 id location
-id location_button
 id location_spi
+id locationtxt
 id map
-id maps_button
 id masked
 id media_actions
 id message
@@ -1985,7 +1984,10 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id phone
+id phonetxt
 id pickImgBtn
+id pickImg_post
 id pin
 id position
 id postLayout
@@ -1996,9 +1998,10 @@ id progress_horizontal
 id radio
 id ratio
 id receivedTxt
+id recomm_list
+id recommtxt
 id rectangles
 id recyclerView_e
-id request_time_button
 id reverseSawtooth
 id right
 id right_icon
@@ -2015,6 +2018,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView3
 id scrollable
 id search_badge
 id search_bar
@@ -2023,6 +2027,7 @@ id search_close_btn
 id search_edit_frame
 id search_go_btn
 id search_image
+id search_list
 id search_loc_spi
 id search_mag_icon
 id search_plate
@@ -2031,6 +2036,7 @@ id search_src_text
 id search_submit_but
 id search_types_spi
 id search_voice_btn
+id searchtxt
 id seekBar
 id select_dialog_listview
 id selected
@@ -2104,7 +2110,6 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
-id time_displayer
 id title
 id titleDividerNoCustom
 id title_template
@@ -2122,6 +2127,7 @@ id transition_transform
 id triangle
 id types
 id types_spi
+id typestxt
 id unchecked
 id uniform
 id unlabeled
@@ -2227,6 +2233,7 @@ layout item_received_message
 layout item_received_photo
 layout item_sent_image
 layout item_sent_message
+layout layout
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2414,6 +2421,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pickImg_buttton
 string project_id
 string prompt_email
 string prompt_password

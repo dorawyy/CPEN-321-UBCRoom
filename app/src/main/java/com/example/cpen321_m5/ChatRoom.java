@@ -75,7 +75,7 @@ public class ChatRoom extends AppCompatActivity implements TextWatcher {
      * @param after
      */
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-        
+
     }
 
     /**
