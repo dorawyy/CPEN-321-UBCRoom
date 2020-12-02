@@ -75,7 +75,8 @@ public class ChatRoom extends AppCompatActivity implements TextWatcher {
      * @param after
      */
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
+        String fake = "am not empty";
+        System.out.println(fake);
     }
 
     /**
@@ -91,7 +92,8 @@ public class ChatRoom extends AppCompatActivity implements TextWatcher {
      * @param count
      */
     public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+        String fake = "am not empty";
+        System.out.println(fake);
     }
 
     @Override
