@@ -79,7 +79,7 @@ public class ChatTest {
                         isDisplayed()));
         imageView.check(matches(isDisplayed()));
 
-        ViewInteraction editText = onView(
+        onView(
                 allOf(withId(R.id.messageEdit), withText("Message..."),
                         isDisplayed()));
 
@@ -103,9 +103,6 @@ public class ChatTest {
                         isDisplayed()));
         textView2.check(matches(withText("hello")));
 
-        ViewInteraction appCompatImageView = onView(
-                allOf(withId(R.id.pickImgBtn),
-                        isDisplayed()));
 
         pressBack();
 
