@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\CPEN321_forked_project\\CPEN-321\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "D:\\CPEN321_term_project\\CPEN-321\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Yuefeng\\.gradle\\caches\\transforms-2\\files-2.1\\a476ee8650c0f9e7654e5f9f2c3718dc\\material-1.2.1\\res\\values-v21\\values-v21.xml",

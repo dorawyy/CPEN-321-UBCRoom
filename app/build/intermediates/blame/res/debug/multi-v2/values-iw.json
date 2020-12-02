@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\CPEN321_forked_project\\CPEN-321\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
+            "outputFile": "D:\\CPEN321_term_project\\CPEN-321\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-iw\\values-iw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Yuefeng\\.gradle\\caches\\transforms-2\\files-2.1\\5eb669ce5a805bc6842a7cd8fb336c21\\jetified-play-services-basement-17.1.1\\res\\values-iw\\values.xml",

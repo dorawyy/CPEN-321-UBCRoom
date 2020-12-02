@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\CPEN321_forked_project\\CPEN-321\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
+            "outputFile": "D:\\CPEN321_term_project\\CPEN-321\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-my\\values-my.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Yuefeng\\.gradle\\caches\\transforms-2\\files-2.1\\eb85146f4d39ef715e25a11504b7bf33\\jetified-firebase-messaging-20.3.0\\res\\values-my\\values.xml",
