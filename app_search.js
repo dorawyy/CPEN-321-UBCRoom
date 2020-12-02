@@ -35,7 +35,8 @@ app.get('/search', function(req, res){
                         types: x.types,
                         phone: x.phone,
                         email: x.email,
-                        descript: x.descript
+                        descript: x.descript,
+                        image: x.image
                     });
                 }
                 data.forEach(elem => {
